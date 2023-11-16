@@ -1,41 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FoodDevApp.MainPage">
+             x:Class="FoodDevApp.MainPage"
+             BackgroundColor="#212121">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.55*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
+        </Grid.RowDefinitions>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+        <Grid ColumnDefinitions="*,*,*" Margin="20">
+            <Image HorizontalOptions="Start" VerticalOptions="Center">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons" 
+                        Glyph="&#xE802;"
+                        Size="20"
+                        Color="#C8C8C8"/>
+                </Image.Source>
+            </Image>
+            <Label Grid.Column="1"
+                   FontFamily="RobotoR"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"
+                   Text="Food Detail"
+                   TextColor="#C8C8C8"
+                   VerticalOptions="Center"/>
+            <Image Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons" 
+                        Glyph="&#xE800;"
+                        Size="20"
+                        Color="#C8C8C8"/>
+                </Image.Source>
+            </Image>
+        </Grid>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+        <Label Grid.Row="1"
+               Margin="20,10,0,0"
+               FontFamily="SpaceB"
+               FontSize="25"
+               Text="=Double Smokey Burguer"
+               TextColor="#E1E1E1"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+        <Grid Grid.Row="2"
+              ColumnDefinitions=".3*,.7*">
+            <Grid RowDefinitions="*,*,*,*,*">
+                <RoundRectangle CornerRadius="0,40,0,40" 
+                                Grid.RowSpan="5" 
+                                Fill="#404040"/>
+                <Grid Margin="10,10,0,0" RowDefinitions="*,*,*">
+                    <Label 
+                        FontFamily="SpaceR"
+                        FontSize="12"
+                        Text="Rate"
+                        TextColor="#C8C8C8"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+                    <Label 
+                        Grid.Row="1"
+                        FontFamily="B"
+                        FontSize="14"
+                        Text="5/5 (12,343)"
+                        TextColor="#E1E1E1"/>
+                    
+                    
+                    
+                </Grid>
+            </Grid>
+        </Grid>
+        
+    </Grid>
 
 </ContentPage>
