@@ -207,6 +207,7 @@
                 Grid.Row="1"
                 FontFamily="RobotoL"
                 LineHeight="1.3"
+                VerticalOptions="Start"
                 Text="Breaded Chicken fillet with creamy mayo and lettuc"
                 TextColor="{StaticResource Gray200}"
                 VerticalTextAlignment="Center"/>

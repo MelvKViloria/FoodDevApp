@@ -68,6 +68,9 @@
 	  <Compile Update="MVVM\View\SignUpPage.xaml.cs">
 	    <DependentUpon>SignUpPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="MVVM\View\FoodSelection.xaml.cs">
+	    <DependentUpon>FoodSelection.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -86,7 +89,7 @@
 	  <MauiXaml Update="page1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\View\startup.xaml">
+	  <MauiXaml Update="MVVM\View\FoodSelection.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

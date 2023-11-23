@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new startup());
+            MainPage = new NavigationPage(new FoodSelection());
         }
     }
 }

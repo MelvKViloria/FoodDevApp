@@ -1,20 +1,20 @@
 namespace FoodDevApp;
 
-public partial class startup : ContentPage
+public partial class FoodSelection : ContentPage
 {
-	public startup()
+	public FoodSelection()
 	{
 		InitializeComponent();
 	}
 
     private void StartBtn_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new startup());
+		Navigation.PushAsync(new FoodSelection());
     }
 
     private void FoodCart_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new startup());
+        Navigation.PushAsync(new FoodSelection());
     }
 
     private void box1_Tapped(object sender, TappedEventArgs e)
