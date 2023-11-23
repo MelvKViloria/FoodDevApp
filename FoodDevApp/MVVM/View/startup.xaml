@@ -329,7 +329,7 @@
                 TextColor="Black"/>
         
         <Button Grid.Row="2"
-                x:Name="Look at Cart" 
+                x:Name="LookAtCart" 
                 Text="My Food Cart" 
                 Clicked="FoodCart_Clicked"
                 HorizontalOptions="End"
