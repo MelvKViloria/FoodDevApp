@@ -49,8 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\beef1.png" />
+	  <None Remove="Resources\Images\beef3.png" />
 	  <None Remove="Resources\Images\burguer.png" />
 	  <None Remove="Resources\Images\chicken.PNG" />
+	  <None Remove="Resources\Images\ChickenN.png" />
+	  <None Remove="Resources\Images\coken.png" />
+	  <None Remove="Resources\Images\grilledC.png" />
+	  <None Remove="Resources\Images\veggie.png" />
+	  <None Remove="Resources\Images\water.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -65,6 +72,12 @@
 	  <Compile Update="MVVM\View\MainPage2.xaml.cs">
 	    <DependentUpon>MainPage2.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="MVVM\View\MainPage4.xaml.cs">
+	    <DependentUpon>MainPage4.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\View\MainPage6.xaml.cs">
+	    <DependentUpon>MainPage6.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="MVVM\View\SignUpPage.xaml.cs">
 	    <DependentUpon>SignUpPage.xaml</DependentUpon>
 	  </Compile>
@@ -78,6 +91,27 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\MainPage2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage5.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage7.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage8.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage9.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\MainPage6.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\SignUpPage.xaml">

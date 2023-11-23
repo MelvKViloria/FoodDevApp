@@ -129,13 +129,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 3" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Grilled Chicken" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image3.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="grilledC.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 3" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$13.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 
@@ -159,13 +159,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 4" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Single Beef" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image4.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="beef1.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 4" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$8.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 
@@ -188,13 +188,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Triple Beef" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image5.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="beef3.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$15.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 
@@ -217,13 +217,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 6" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Veggie Burger" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image6.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="veggie.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 6" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$10.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 
@@ -246,13 +246,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 7" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Chicken Nuggets" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image7.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="ChickenN.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 7" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$8.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 
@@ -275,13 +275,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 8" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Coke" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image8.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="coken.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 8" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$3" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 
@@ -304,13 +304,13 @@
                         </Grid.RowDefinitions>
 
                         <!-- Text Above Image -->
-                        <Label Text="Top Text 9" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+                        <Label Text="Water" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
 
                         <!-- Image -->
-                        <Image Source="your_image9.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+                        <Image Source="water.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
 
                         <!-- Text Below Image -->
-                        <Label Text="Bottom Text 9" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                        <Label Text="$2" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
                     </Grid>
                 </Frame>
 

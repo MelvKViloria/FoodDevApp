@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodDevApp.MainPage3"
+             xmlns:rating="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             BackgroundColor="#212121">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.50*"/>
+            <RowDefinition Height="0.30*"/>
+            <RowDefinition Height="0.25*"/>
+        </Grid.RowDefinitions>
+
+        <Grid ColumnDefinitions="*,*,*" Margin="20">
+            <Image HorizontalOptions="Start" VerticalOptions="Center">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons" 
+                        Glyph="&#xE802;"
+                        Size="20"
+                        Color="#C8C8C8"/>
+                </Image.Source>
+            </Image>
+            <Label Grid.Column="1"
+                   FontFamily="RobotoR"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   Text="Food Detail"
+                   TextColor="#C8C8C8"
+                   VerticalOptions="Center"/>
+            <Image Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons" 
+                        Glyph="&#xE800;"
+                        Size="20"
+                        Color="#C8C8C8"/>
+                </Image.Source>
+            </Image>
+        </Grid>
+
+        <Label Grid.Row="1"
+               Margin="20,10,0,0"
+               FontFamily="SpaceB"
+               FontSize="25"
+               Text="=Grilled Chicken Burguer"
+               TextColor="#E1E1E1"/>
+
+        <Grid Grid.Row="2"
+              ColumnDefinitions=".3*,.7*"
+              Margin="0,0,-50,0">
+
+            <Grid RowDefinitions="*,*,*,*,*">
+                <RoundRectangle CornerRadius="0,40,0,40" 
+                                Grid.RowSpan="5" 
+                                Fill="#404040"/>
+                <Grid Margin="10,10,0,0" RowDefinitions="*,*,*">
+                    <Label 
+                        FontFamily="SpaceR"
+                        FontSize="12"
+                        Text="Rate"
+                        TextColor="#C8C8C8"/>
+
+                    <Label 
+                        Grid.Row="1"
+                        FontFamily="SpaceB"
+                        FontSize="14"
+                        Text="5/5 (12,343)"
+                        TextColor="#E1E1E1"/>
+                    <rating:SfRating
+                        Grid.Row="2"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        ItemSize="15"
+                        Precision="Exact"
+                        Value="4.6">
+                        <rating:SfRating.RatingSettings>
+                            <rating:RatingSettings
+                                RatedFill="#FFC71F"
+                                RatedStroke="#FFC71F"
+                                UnratedFill="Gray"
+                                UnratedStroke="Gray" />
+
+                        </rating:SfRating.RatingSettings>
+
+
+                    </rating:SfRating>
+                </Grid>
+                <Grid Grid.Row="1"
+                          Margin="10,10,0,0"
+                          RowDefinitions="*,*"
+                          RowSpacing="5">
+                    <Label FontFamily="SpaceR"
+                           FontSize="12"
+                           Text="Delivery Time"
+                           TextColor="#C8C8C8"
+                           VerticalOptions="End"/>
+                    <HorizontalStackLayout Grid.Row="1"
+                                           Spacing="5">
+
+                        <Image
+                        HorizontalOptions="End" 
+                        VerticalOptions="Start">
+
+                            <Image.Source>
+                                <FontImageSource 
+                                    FontFamily="Icons" 
+                                    Glyph="&#xE801;"
+                                    Size="20"
+                                    Color="#C8C8C8"/>
+                            </Image.Source>
+                        </Image>
+                        <Label FontFamily="SpaceR"
+                               FontSize="15"
+                               Text="20 Mins"
+                               TextColor="#E1E1E1"
+                               VerticalOptions="Start"/>
+
+
+
+
+                    </HorizontalStackLayout>
+
+                </Grid>
+                <Grid Grid.Row="2"
+                          Margin="10,10,0,0"
+                          RowDefinitions="*,*"
+                          RowSpacing="5">
+
+                    <Label FontFamily="SpaceR"
+                           FontSize="12"
+                           Text="Calories"
+                           TextColor="#C8C8C8"
+                           VerticalOptions="End"/>
+
+                    <Label 
+                           Grid.Row="1"
+                           FontFamily="SpaceSB"
+                           FontSize="15"
+                           Text="1000 Caal"
+                           TextColor="#E1E1E1"
+                           VerticalOptions="Start"/>
+
+
+                </Grid>
+                <Grid Grid.Row="3"
+                          Margin="10,10,0,0"
+                          RowDefinitions="*,*"
+                          RowSpacing="5">
+
+                    <Label FontFamily="SpaceR"
+                           FontSize="12"
+                           Text="Branch"
+                           TextColor="#C8C8C8"
+                           VerticalOptions="End"/>
+
+                    <Label 
+                           Grid.Row="1"
+                           FontFamily="SpaceSB"
+                           FontSize="15"
+                           Text="Whangaparoa"
+                           TextColor="#E1E1E1"
+                           VerticalOptions="Start"/>
+
+
+                </Grid>
+                <Grid Grid.Row="4"
+                          Margin="10,10,0,0"
+                          RowDefinitions="*,*"
+                          RowSpacing="5">
+
+                    <Label FontFamily="SpaceR"
+                           FontSize="12"
+                           Text="Price"
+                           TextColor="#C8C8C8"
+                           VerticalOptions="End"/>
+
+                    <Label 
+                           Grid.Row="1"
+                           FontFamily="SpaceSB"
+                           FontSize="15"
+                           Text="$12.5"
+                           TextColor="#E1E1E1"
+                           VerticalOptions="Start"/>
+
+
+                </Grid>
+
+            </Grid>
+            <Image Grid.Column="1"
+                   Aspect="Fill"
+                   Source="grilledC.png"/>
+        </Grid>
+
+        <Grid Grid.Row="3"
+              Margin="20,10,0,0"
+              RowDefinitions=".3*,.7*">
+            <Label FontFamily="SpaceM"
+                   FontSize="18"
+                   Text="Ingredients"
+                   TextColor="{StaticResource Gray100}"
+                   VerticalTextAlignment="Center"/>
+            <Label
+                Grid.Row="1"
+                FontFamily="RobotoL"
+                LineHeight="1.3"
+                VerticalOptions="Start"
+                Text="Grilled Chicken with crispy bacon egg and lettuce with mayo"
+                TextColor="{StaticResource Gray200}"
+                VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <Button
+            Grid.Row="4"
+            Margin="15,0"
+            BackgroundColor="#FFC71F"
+            CornerRadius="30"
+            FontAttributes="Bold"
+            FontFamily="RobotoR"
+            FontSize="18"
+            Text="Add to Cart"
+            TextColor="Black"/>
+    </Grid>
+
+
+</ContentPage>
