@@ -2,19 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodDevApp.startup"
-             Title="startup"
+             Title="Food Slection Page"
              BackgroundColor="#212121">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="0.55*"/>
-            <RowDefinition Height="0.15*"/>
             <RowDefinition Height="0.15*"/>
         </Grid.RowDefinitions>
 
-        <Grid ColumnDefinitions="*,*,*" Margin="20">
+        <!-- Header Grid -->
+        <Grid Grid.Row="0" ColumnDefinitions="*,*,*" Margin="20">
             <Image HorizontalOptions="Start" VerticalOptions="Center">
                 <Image.Source>
                     <FontImageSource 
@@ -24,7 +23,7 @@
             </Image>
             <Label Grid.Column="1"
                FontFamily="RobotoR"
-               FontSize="24"
+               FontSize="15"
                HorizontalTextAlignment="Center"
                Text="Food Selection"
                TextColor="#C8C8C8"
@@ -32,23 +31,311 @@
             <Image Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center">
                 <Image.Source>
                     <FontImageSource
-                    Size="20"
+                    Size="24"
                     Color="#C8C8C8"/>
                 </Image.Source>
             </Image>
         </Grid>
 
-        <Label Grid.Row="1"
-           Margin="20,10,0,0"
-           FontFamily="SpaceB"
-           FontSize="25"
-           Text="=Select A Food Item"
-           TextColor="#E1E1E1"/>
+        <!-- Main Content Grid -->
+        <ScrollView Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
-        <Button x:Name="StartBtn" Text="start" Clicked="StartBtn_Clicked"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!-- Box 1 -->
+                <Frame Grid.Row="0" Grid.Column="0"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box1" Tapped="box1_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <!-- Adjusted height for Image -->
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Double Beef" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="burguer.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="$12.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 2 -->
+                <Frame Grid.Row="0" Grid.Column="1"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box2" Tapped="box2_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Chicken Bruger" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="chicken.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="$10.5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 3 -->
+                <Frame Grid.Row="0" Grid.Column="2"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box3" Tapped="box3_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 3" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image3.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 3" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+
+                <!-- Box 4 -->
+                <Frame Grid.Row="1" Grid.Column="0"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box4" Tapped="box4_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 4" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image4.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 4" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 5 -->
+                <Frame Grid.Row="1" Grid.Column="1"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box5" Tapped="box5_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image5.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 5" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 6 -->
+                <Frame Grid.Row="1" Grid.Column="2"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box6" Tapped="box6_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 6" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image6.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 6" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 7 -->
+                <Frame Grid.Row="2" Grid.Column="0"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box7" Tapped="box7_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 7" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image7.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 7" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 8 -->
+                <Frame Grid.Row="2" Grid.Column="1"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box8" Tapped="box8_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 8" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image8.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 8" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Box 9 -->
+                <Frame Grid.Row="2" Grid.Column="2"
+       BackgroundColor="Transparent"
+       VerticalOptions="FillAndExpand"
+       HorizontalOptions="FillAndExpand"
+       Margin="10">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="box9" Tapped="box9_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Text Above Image -->
+                        <Label Text="Top Text 9" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="0"/>
+
+                        <!-- Image -->
+                        <Image Source="your_image9.png" Aspect="AspectFit" Grid.Row="1" VerticalOptions="CenterAndExpand" />
+
+                        <!-- Text Below Image -->
+                        <Label Text="Bottom Text 9" TextColor="#C8C8C8" HorizontalTextAlignment="Center" VerticalOptions="Start" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+
+            </Grid>
+        </ScrollView>
+
+        <!-- Button Row -->
+        <Button Grid.Row="2"
+                x:Name="StartBtn" 
+                Text="Login / Register" 
+                Clicked="StartBtn_Clicked"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Margin="50,0,0,0"
+                BackgroundColor="#FFC71F"
+                TextColor="Black"/>
+        
+        <Button Grid.Row="2"
+                x:Name="Look at Cart" 
+                Text="My Food Cart" 
+                Clicked="FoodCart_Clicked"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Margin="0,0,50,0"
+                BackgroundColor="#FFC71F"
+                TextColor="Black"/>
     </Grid>
-    
-    
-    
-</ContentPage>  
-
+</ContentPage>

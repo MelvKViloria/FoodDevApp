@@ -1,12 +1,11 @@
-﻿namespace FoodDevApp
-{
-    public partial class MainPage : ContentPage
-    {
-        int count = 0;
+﻿namespace FoodDevApp;
 
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+public partial class MainPage : ContentPage
+{
+    
+
+    public MainPage()
+    {
+        InitializeComponent();
     }
 }

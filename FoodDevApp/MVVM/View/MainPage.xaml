@@ -8,10 +8,10 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="0.55*"/>
-            <RowDefinition Height="0.15*"/>
-            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.50*"/>
+            <RowDefinition Height="0.30*"/>
+            <RowDefinition Height="0.25*"/>
         </Grid.RowDefinitions>
 
         <Grid ColumnDefinitions="*,*,*" Margin="20">
@@ -26,7 +26,7 @@
             </Image>
             <Label Grid.Column="1"
                    FontFamily="RobotoR"
-                   FontSize="24"
+                   FontSize="20"
                    HorizontalTextAlignment="Center"
                    Text="Food Detail"
                    TextColor="#C8C8C8"
@@ -46,7 +46,7 @@
                Margin="20,10,0,0"
                FontFamily="SpaceB"
                FontSize="25"
-               Text="=Double Smokey Burguer"
+               Text="= Double Smoked Burguer"
                TextColor="#E1E1E1"/>
 
         <Grid Grid.Row="2"
@@ -207,7 +207,7 @@
                 Grid.Row="1"
                 FontFamily="RobotoL"
                 LineHeight="1.3"
-                Text="Two grilled beef patties with 2 soft melted cheese dashed with mayo tomato sauce and musterd and topped with tomato and lettuce on a sesame seed bun"
+                Text="double smoked patty with cheese lettuce and tomatos and tomato sauce"
                 TextColor="{StaticResource Gray200}"
                 VerticalTextAlignment="Center"/>
 
@@ -224,6 +224,6 @@
             Text="Add to Cart"
             TextColor="Black"/>
     </Grid>
-    
-    
+
+
 </ContentPage>
