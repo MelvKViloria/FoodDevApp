@@ -1,4 +1,4 @@
-namespace FoodDevApp.MVVM.View;
+namespace FoodDeliveryApp.MVVM.View;
 
 public partial class SignUpPage : ContentPage
 {
@@ -6,4 +6,14 @@ public partial class SignUpPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void LogIn_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new LogInPage());
+    }
+
+    private void ForgotPass_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new LogInPage());
+    }
 }

@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FoodDevApp.MVVM.View.LoginPage"
-             Title="LoginPage">
+             x:Class="FoodDeliveryApp.MVVM.View.LogInPage"
+             Title="LogInPage"
+             BackgroundColor="{StaticResource Gray600}">
+    <Grid>
+        <StackLayout Margin="20">
 
 
-        
+            <StackLayout Margin="0,80">
+
+                <Label Text="Please Sign in" FontSize="16" TextColor="{StaticResource Gray100}" HorizontalOptions="Center" />
+
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Username" FontSize="16" />
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3"
+                           BackgroundColor="White"
+                           CornerRadius="5" />
+                    <Entry BackgroundColor="Transparent"
+                           Margin="5,0"
+                           Placeholder="Enter UserName"
+                           PlaceholderColor="{StaticResource Gray300}" />
+                </Grid>
+                <Label Text="Password" FontSize="16" />
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5" />
+                    <Entry BackgroundColor="Transparent"
+                           Margin="5,0"
+                           Placeholder="Enter Password" 
+                           PlaceholderColor="{StaticResource Gray300}" 
+                           IsPassword="True"/>
+                </Grid>
+            </StackLayout>
+            <Button Margin="0,15" BackgroundColor="{StaticResource Gray400}" 
+                    WidthRequest="500"
+                    HorizontalOptions="Center"
+                    Text="LogIn" 
+                    x:Name="Login"
+                    Clicked="Login_Clicked"
+					/>
+            <StackLayout VerticalOptions="EndAndExpand"
+                         Orientation="Horizontal">
+                <Button TextColor="{StaticResource White}" 
+                       FontSize="16"
+                       Text="Forgot Password?"
+                       HorizontalOptions="StartAndExpand"
+                       BackgroundColor="Transparent"
+                        BorderColor="Transparent"
+                        x:Name="ForgotPass"
+                        Clicked="ForgotPass_Clicked"
+                       />
+                <Button TextColor="{StaticResource White}" 
+                        FontSize="16"
+                        Text="Create New Account"
+                        HorizontalOptions="End" 
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"
+                        x:Name="SignUp"
+                        Clicked="SignUp_Clicked"
+                       />
+
+
+            </StackLayout>
+
+
+
+
+        </StackLayout>
+    </Grid>
 </ContentPage>
