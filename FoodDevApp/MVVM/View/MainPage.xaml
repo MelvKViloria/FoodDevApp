@@ -214,16 +214,17 @@
 
         </Grid>
 
-        <Button
-            Grid.Row="4"
-            Margin="15,0"
-            BackgroundColor="#FFC71F"
-            CornerRadius="30"
-            FontAttributes="Bold"
-            FontFamily="RobotoR"
-            FontSize="18"
-            Text="Add to Cart"
-            TextColor="Black"/>
+        <Button x:Name="AddToCartButton"
+                Text="Add to Cart"
+                BackgroundColor="#FFC71F"
+                CornerRadius="30"
+                FontAttributes="Bold"
+                FontFamily="RobotoR"
+                FontSize="18"
+                TextColor="Black"
+                Clicked="AddToCartButton_Clicked"
+                Grid.Row="4"/>
+
     </Grid>
 
 

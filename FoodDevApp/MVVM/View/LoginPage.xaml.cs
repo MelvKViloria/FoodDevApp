@@ -22,6 +22,6 @@ public partial class LogInPage : ContentPage
 
     private void Login_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new startup());
+        Navigation.PushAsync(new FoodSelection());
     }
 }
