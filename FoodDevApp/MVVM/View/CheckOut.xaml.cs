@@ -1,6 +1,7 @@
 using Microsoft.Maui.Controls;
 using System;
 using System.Collections.Generic;
+using System.Linq; // Import the LINQ namespace for the Sum method
 
 namespace FoodDevApp
 {
@@ -19,12 +20,20 @@ namespace FoodDevApp
         {
             OrderSummaryLabel.Text = "Order Summary:\n";
 
+            double totalPrice = 0;
+
             foreach (var item in cartItems)
             {
                 OrderSummaryLabel.Text += $"{item.ItemName} - Price: ${item.ItemPrice}\n";
+                totalPrice += item.ItemPrice;
             }
+            OrderSummaryLabel.Text += $"Total Items: {cartItems.Count}\n";
+            OrderSummaryLabel.Text += $"Total Price: ${totalPrice:F2}";
+        }
 
-            OrderSummaryLabel.Text += $"Total Items: {cartItems.Count}";
+        private void Order_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
