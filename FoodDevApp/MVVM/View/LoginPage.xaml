@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodDeliveryApp.MVVM.View.LogInPage"
              Title="LogInPage"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Gray600}">
     <Grid>
         <StackLayout Margin="20">
@@ -23,7 +24,12 @@
                     <Entry BackgroundColor="Transparent"
                            Margin="5,0"
                            Placeholder="Enter UserName"
-                           PlaceholderColor="{StaticResource Gray300}" />
+                           PlaceholderColor="{StaticResource Gray300}" 
+                           Text="{Binding UserName}"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand"/>
                 </Grid>
                 <Label Text="Password" FontSize="16" />
                 <Grid Margin="0,5">
@@ -32,7 +38,12 @@
                            Margin="5,0"
                            Placeholder="Enter Password" 
                            PlaceholderColor="{StaticResource Gray300}" 
-                           IsPassword="True"/>
+                           IsPassword="True"
+                           Text="{Binding Password}"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand"/>
                 </Grid>
             </StackLayout>
             <Button Margin="0,15" BackgroundColor="{StaticResource Gray400}" 
@@ -41,6 +52,7 @@
                     Text="LogIn" 
                     x:Name="Login"
                     Clicked="Login_Clicked"
+                    Command="{Binding LogInCommand}"
 					/>
             <StackLayout VerticalOptions="EndAndExpand"
                          Orientation="Horizontal">
