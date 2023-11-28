@@ -18,8 +18,6 @@
             <Image HorizontalOptions="Start" VerticalOptions="Center">
                 <Image.Source>
                     <FontImageSource 
-                        FontFamily="Icons" 
-                        Glyph="&#xE802;"
                         Size="20"
                         Color="#C8C8C8"/>
                 </Image.Source>
@@ -95,7 +93,7 @@
                           RowSpacing="5">
                     <Label FontFamily="SpaceR"
                            FontSize="12"
-                           Text="Delivery Time"
+                           Text="Time to Make"
                            TextColor="#C8C8C8"
                            VerticalOptions="End"/>
                     <HorizontalStackLayout Grid.Row="1"
@@ -107,15 +105,13 @@
 
                             <Image.Source>
                                 <FontImageSource 
-                                    FontFamily="Icons" 
-                                    Glyph="&#xE801;"
                                     Size="20"
                                     Color="#C8C8C8"/>
                             </Image.Source>
                         </Image>
                         <Label FontFamily="SpaceR"
                                FontSize="15"
-                               Text="20 Mins"
+                               Text="2 Mins"
                                TextColor="#E1E1E1"
                                VerticalOptions="Start"/>
 
@@ -182,7 +178,7 @@
                            Grid.Row="1"
                            FontFamily="SpaceSB"
                            FontSize="15"
-                           Text="$12.5"
+                           Text="$10.5"
                            TextColor="#E1E1E1"
                            VerticalOptions="Start"/>
 

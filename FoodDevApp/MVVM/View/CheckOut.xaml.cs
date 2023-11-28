@@ -44,22 +44,18 @@ namespace FoodDevApp
         private async void Order_Clicked(object sender, EventArgs e)
         {
             
-            int numberOfItems = GetNumberOfItems(); 
+            int numberOfItems = GetNumberOfItems();  
 
-            // Calculate estimated time (assuming 5 minutes per item)
-            int estimatedTime = numberOfItems * 5;
+            // Calculate estimated time (assuming 2 minutes per item + 15 mins delivery)
+            int estimatedTime = numberOfItems * 2+15;
 
             // Display the pop-up message
             await DisplayAlert("Order Confirmation", $"Your food order has been made and will arrive in {estimatedTime} minutes.", "OK");
-
-            // Clear the items from cart
-            itemsList.Clear();
         }
 
         private int GetNumberOfItems()
         {
-            // 5 meaning the number of time it takes for each items and x it but how much items u have
-            return 5;
+            return 2;
         }
 
     }
