@@ -110,7 +110,7 @@
                             </Image.Source>
                         </Image>
                         <Label FontFamily="SpaceR"
-                               FontSize="25"
+                               FontSize="15"
                                Text="2 Mins"
                                TextColor="#E1E1E1"
                                VerticalOptions="Start"/>
