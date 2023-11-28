@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodDevApp.CheckOut"
              Title="Food Item List"
-             BackgroundColor="{StaticResource Gray700}">
+             BackgroundColor="#212121">
 
     <ScrollView>
         <Grid>
