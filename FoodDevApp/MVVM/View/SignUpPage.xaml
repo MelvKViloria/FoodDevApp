@@ -19,14 +19,11 @@
                            />
                     <Entry BackgroundColor="Transparent"
                      Margin="5,0"
-                     Placeholder="Enter FirstName"
+                     Placeholder="Enter Name"
                      PlaceholderColor="{StaticResource Gray300}"                           
-                       HorizontalOptions="StartAndExpand"   />
-                    <Entry BackgroundColor="Transparent"
-                           Margin="5,0"
-                           Placeholder="Enter Last Name"
-                           HorizontalOptions="EndAndExpand" 
-                           PlaceholderColor="{StaticResource Gray300}" />
+                       HorizontalOptions="StartAndExpand" 
+                           x:Name="NameEntryField"/>
+                   
                 </Grid>
             </StackLayout>
             <StackLayout Margin="0,10">
@@ -36,7 +33,8 @@
                     <Entry BackgroundColor="Transparent"
                            Margin="5,0"
                            Placeholder="Enter Email"
-                           PlaceholderColor="{StaticResource Gray300}"/>
+                           PlaceholderColor="{StaticResource Gray300}"
+                           x:Name="EmailEntryField"/>
                 </Grid>
             </StackLayout>
             <StackLayout Margin="0,1">
@@ -46,17 +44,18 @@
                     <Entry BackgroundColor="Transparent"
                    Margin="5,0"
                    Placeholder="Enter Password"
-                   PlaceholderColor="{StaticResource Gray300}"/>
+                   PlaceholderColor="{StaticResource Gray300}"
+                           x:Name="PasswordEntryField"/>
                 </Grid>
             </StackLayout>
             <StackLayout Margin="0,10">
                 <Grid>
                     <Frame Opacity="0.3"
-          CornerRadius="5"/>
+                    CornerRadius="5"/>
                     <Entry BackgroundColor="Transparent"
-          Margin="5,0"
-          Placeholder="Confirm Password"
-          PlaceholderColor="{StaticResource Gray300}"/>
+                       Margin="5,0"
+                         Placeholder="Confirm Password"
+                        PlaceholderColor="{StaticResource Gray300}"/>
                 </Grid>
             </StackLayout>
             <StackLayout Margin="0,1">
