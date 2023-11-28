@@ -1,3 +1,4 @@
+using FoodDeliveryApp.MVVM.View;
 using Microsoft.Maui.Controls;
 using System;
 
@@ -12,7 +13,7 @@ namespace FoodDevApp
 
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new LogInPage());
         }
 
         private void FoodCart_Clicked(object sender, EventArgs e)

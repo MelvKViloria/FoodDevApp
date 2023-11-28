@@ -326,7 +326,8 @@
                 VerticalOptions="Center"
                 Margin="50,0,0,0"
                 BackgroundColor="#FFC71F"
-                TextColor="Black"/>
+                TextColor="Black"
+                />
         
         <Button Grid.Row="2"
                 x:Name="LookAtCart" 
