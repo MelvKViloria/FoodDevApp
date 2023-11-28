@@ -1,12 +1,17 @@
 using FoodDevApp;
 
+
 namespace FoodDeliveryApp.MVVM.View;
 
 public partial class LogInPage : ContentPage
 {
+
 	public LogInPage()
 	{
 		InitializeComponent();
+     
+
+
 	}
 
     private void SignUp_Clicked(object sender, EventArgs e)

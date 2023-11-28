@@ -5,7 +5,7 @@ using FoodDevApp.MVVM.View;
 
     public partial class App : Application
     {
-        public App()
+        public App(LogInPage mainpage)
         {
             InitializeComponent();
 
