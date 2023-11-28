@@ -4,31 +4,48 @@
              Title="Food Item List"
              BackgroundColor="{StaticResource Gray700}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-        <!-- Order Summary Section -->
-        <StackLayout Grid.Row="0" 
-                     HorizontalOptions="CenterAndExpand"
-                     VerticalOptions="CenterAndExpand">
-            <Label x:Name="OrderSummaryLabel" 
-                   FontSize="20" 
-                   Text="Order Summary" 
-                   TextColor="White"/>
-        </StackLayout>
-        
-        <Button x:Name="Order"
-          Text="Order Now"
-          BackgroundColor="#FFC71F"
-          CornerRadius="30"
-          FontAttributes="Bold"
-          FontFamily="RobotoR"
-          FontSize="18"
-          TextColor="Black"
-          Clicked="Order_Clicked"
-          Grid.Row="4"/>
-    </Grid>
+            <!-- Order Summary Section -->
+            <StackLayout Grid.Row="0"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Label x:Name="OrderSummaryLabel"
+                       FontSize="20"
+                       Text="My Order Cart Summary"
+                       TextColor="White"/>
+            </StackLayout>
+
+            <!-- Main Content Grid -->
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Content Goes Here -->
+                <!-- Add your content (e.g., list of food items) in the second row -->
+
+            </Grid>
+
+            <!-- Order Button at the Bottom -->
+            <Button x:Name="Order"
+                    Text="Order Now"
+                    BackgroundColor="#FFC71F"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    FontFamily="RobotoR"
+                    FontSize="20"
+                    TextColor="Black"
+                    Clicked="Order_Clicked"
+                    Grid.Row="2"
+                    Margin="40"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>
