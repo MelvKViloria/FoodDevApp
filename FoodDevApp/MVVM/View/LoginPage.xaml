@@ -4,7 +4,7 @@
              x:Class="FoodDeliveryApp.MVVM.View.LogInPage"
              Title="LogInPage"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="{StaticResource Gray600}">
+             BackgroundColor="#212121">
     <Grid>
         <StackLayout Margin="20">
 
@@ -29,7 +29,8 @@
                            FontAttributes="Bold"
                            TextColor="Black"
                            VerticalOptions="Center"
-                           HorizontalOptions="FillAndExpand"/>
+                           HorizontalOptions="FillAndExpand"
+                           x:Name="UserNameEntry"/>
                 </Grid>
                 <Label Text="Password" FontSize="16" />
                 <Grid Margin="0,5">
@@ -43,7 +44,8 @@
                            FontAttributes="Bold"
                            TextColor="Black"
                            VerticalOptions="Center"
-                           HorizontalOptions="FillAndExpand"/>
+                           HorizontalOptions="FillAndExpand"
+                           x:Name="PasswordEntry"/>
                 </Grid>
             </StackLayout>
             <Button Margin="0,15" BackgroundColor="{StaticResource Gray400}" 

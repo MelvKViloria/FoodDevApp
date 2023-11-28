@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodDeliveryApp.MVVM.View.SignUpPage"
-             BackgroundColor="{StaticResource Gray600}">
+             BackgroundColor="#212121"
+             >
     <Grid>
         <StackLayout>
 
@@ -19,7 +20,7 @@
                            />
                     <Entry BackgroundColor="Transparent"
                      Margin="5,0"
-                     Placeholder="Enter Name"
+                     Placeholder="Enter Username"
                      PlaceholderColor="{StaticResource Gray300}"                           
                        HorizontalOptions="StartAndExpand" 
                            x:Name="NameEntryField"/>
@@ -68,6 +69,21 @@
                     PlaceholderColor="{StaticResource Gray300}"
                            />
                 </Grid>
+            </StackLayout>
+
+            <StackLayout Margin="4,7">
+                <Button TextColor="{StaticResource White}" 
+                       FontSize="20"
+                       Text="Register"
+                        WidthRequest="200"
+                       HorizontalOptions="StartAndExpand"                      
+                        x:Name="Registration"
+                        Clicked="Registration_Clicked"
+                        Opacity="0.6" 
+                        BackgroundColor="{StaticResource Gray300}"/>
+
+
+
             </StackLayout>
 
             <StackLayout VerticalOptions="EndAndExpand"
