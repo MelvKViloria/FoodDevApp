@@ -29,8 +29,6 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <!-- Content Goes Here -->
-                <!-- Add your content (e.g., list of food items) in the second row -->
 
             </Grid>
 
