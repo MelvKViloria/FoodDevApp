@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FoodDevApp.FoodSelection"
+             x:Class="FoodDevApp.Food2"
              Title="Food Slection Page"
              BackgroundColor="#212121">
 
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="1*"/>
@@ -20,21 +21,20 @@
            VerticalOptions="Center"/>
 
         <!-- Header Grid -->
-        <Grid Grid.Row="0" ColumnDefinitions="*,*,*" Margin="2">
-            <Image HorizontalOptions="Start" VerticalOptions="Center">
+        <Grid Grid.Row="0" ColumnDefinitions="*,*,*" Margin="20">
+            <Label Grid.Column="1"
+               FontFamily="RobotoR"
+               FontSize="15"
+               HorizontalTextAlignment="Center"
+               TextColor="#C8C8C8"
+               VerticalOptions="Center"/>
+            <Image Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center">
                 <Image.Source>
-                    <FontImageSource 
-                    Size="20"
+                    <FontImageSource
+                    Size="24"
                     Color="#C8C8C8"/>
                 </Image.Source>
             </Image>
-            <Label Grid.Column="1"
-               FontFamily="RobotoR"
-               FontSize="20"
-               HorizontalTextAlignment="Center"
-               Text="This is a Food Selection Preview Please Login to make an order"
-               TextColor="#C8C8C8"
-               VerticalOptions="End"/>
         </Grid>
 
         <!-- Main Content Grid -->
@@ -317,18 +317,6 @@
             </Grid>
         </ScrollView>
 
-        <!-- Button Row -->
-        <Button Grid.Row="2"
-                x:Name="StartBtn" 
-                Text="Login / Register" 
-                Clicked="StartBtn_Clicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                Margin="50,0,0,0"
-                BackgroundColor="#FFC71F"
-                TextColor="Black"
-                />
-        
         <Button Grid.Row="2"
                 x:Name="LookAtCart" 
                 Text="My Food Cart" 
@@ -338,6 +326,20 @@
                 Margin="0,0,50,0"
                 BackgroundColor="#FFC71F"
                 TextColor="Black"/>
+        
+        <Label Grid.Row="2"
+       Text="Your Are Now logged In"
+       FontSize="18"
+       TextColor="#C8C8C8"
+       HorizontalTextAlignment="Start"
+       VerticalOptions="Center"/>
+        
+        <Label Grid.Row="2"
+       Text="you can now place your order now"
+       FontSize="18"
+       TextColor="#C8C8C8"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Center"/>
         
     </Grid>
 </ContentPage>

@@ -39,7 +39,7 @@ public partial class LogInPage : ContentPage
 
         if (user != null && user.Password == password)
         {
-            Navigation.PushAsync(new FoodSelection());
+            Navigation.PushAsync(new Food2());
         }
         else
         {
