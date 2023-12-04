@@ -102,5 +102,22 @@ namespace FoodDevApp
         {
             Box_Tapped(9);
         }
+
+        private async void Feedback_Clicked(object sender, EventArgs e)
+        {
+            string externalLink = "https://docs.google.com/forms/d/e/1FAIpQLSfY9ZtTyvOLPl9Hb8xOkPqpdSIspi3jehMj8o_x6U_btzsnDQ/viewform?pli=1";
+
+
+            if (await Launcher.CanOpenAsync(externalLink))
+            {
+                // Launch the URL
+                await Launcher.OpenAsync(externalLink);
+            }
+            else
+            {
+
+            }
+
+        }
     }
 }

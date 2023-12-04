@@ -13,7 +13,7 @@ namespace FoodDevApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LogInPage());
+            MainPage = new NavigationPage(new FoodSelection());
         }
     }
 }

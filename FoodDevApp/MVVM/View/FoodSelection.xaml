@@ -338,5 +338,16 @@
                 Margin="0,0,50,0"
                 BackgroundColor="#FFC71F"
                 TextColor="Black"/>
+
+        <Button Grid.Row="2"
+        x:Name="Feedback" 
+        Text="Feedback" 
+        Clicked="Feedback_Clicked"
+        HorizontalOptions="Center"
+                
+        VerticalOptions="Center"
+        Margin="0,0,50,0"
+        BackgroundColor="#FFC71F"
+        TextColor="Black"/>
     </Grid>
 </ContentPage>
