@@ -332,14 +332,26 @@
        FontSize="18"
        TextColor="#C8C8C8"
        HorizontalTextAlignment="Start"
-       VerticalOptions="Center"/>
+       VerticalOptions="Center"
+               Margin="20"/>
         
         <Label Grid.Row="2"
-       Text="you can now place your order now"
+       Text=""
        FontSize="18"
        TextColor="#C8C8C8"
        HorizontalTextAlignment="Center"
        VerticalOptions="Center"/>
-        
+
+        <Button Grid.Row="2"
+                x:Name="Loginout" 
+                Text="SignOut" 
+                Clicked="Loginout_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,0,0,0"
+                BackgroundColor="#FFC71F"
+                TextColor="Black"/>
+
+
     </Grid>
 </ContentPage>

@@ -13,28 +13,23 @@
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0"
-           FontSize="20"
+           FontSize="15"
            Text="Welcome to a Food Delivery App For Company X"
            TextColor="#C8C8C8"
            HorizontalTextAlignment="Center"
-           VerticalOptions="Center"/>
+           VerticalOptions="End"/>
 
         <!-- Header Grid -->
         <Grid Grid.Row="0" ColumnDefinitions="*,*,*" Margin="2">
             <Image HorizontalOptions="Start" VerticalOptions="Center">
-                <Image.Source>
-                    <FontImageSource 
-                    Size="20"
-                    Color="#C8C8C8"/>
-                </Image.Source>
             </Image>
             <Label Grid.Column="1"
                FontFamily="RobotoR"
-               FontSize="20"
+               FontSize="10"
                HorizontalTextAlignment="Center"
                Text="This is a Food Selection Preview Please Login to make an order"
                TextColor="#C8C8C8"
-               VerticalOptions="End"/>
+               VerticalOptions="Start"/>
         </Grid>
 
         <!-- Main Content Grid -->

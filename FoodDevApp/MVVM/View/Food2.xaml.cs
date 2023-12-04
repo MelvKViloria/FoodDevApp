@@ -97,5 +97,11 @@ namespace FoodDevApp
         {
             Box_Tapped(9);
         }
+
+        private void Loginout_Clicked(object sender, EventArgs e)
+        {
+            // Navigate to the CheckoutPage and pass the cart items
+            Navigation.PushAsync(new LogInPage());
+        }
     }
 }
